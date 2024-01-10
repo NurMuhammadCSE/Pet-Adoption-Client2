@@ -1,16 +1,23 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .then((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
         {/* Replace the link and logo with your actual logo and home page link */}
         <Link to="/" className="btn btn-ghost text-xl">
-          <img
-            src="logo.jpg"
-            alt="Your Logo"
-            className="h-8 w-8 mr-2"
-          />
+          <img src="logo.jpg" alt="Your Logo" className="h-8 w-8 mr-2" />
           Cat Adoption
         </Link>
       </div>
@@ -26,24 +33,36 @@ const Navbar = () => {
           <Link to="/donation-campaigns" className="btn btn-ghost">
             Donation Campaigns
           </Link>
-          <Link to="/login" className="btn btn-ghost">
-            Login
-          </Link>
+          {user?.email ? (
+            <></>
+          ) : (
+            <>
+              <Link to="/login" className="btn btn-ghost">
+                Login
+              </Link>
+            </>
+          )}
         </div>
         <div className="dropdown dropdown-end">
           {/* Use your user profile picture */}
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle avatar"
-          >
-            <div className="w-10 rounded-full">
-              <img
-                alt="User Profile"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+          {user?.email && (
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar"
+            >
+              <div className="w-10 rounded-full">
+                <img
+                  alt="User Profile"
+                  src={
+                    user?.email
+                      ? user?.photoURL
+                      : `https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg`
+                  }
+                />
+              </div>
             </div>
-          </div>
+          )}
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
@@ -52,10 +71,7 @@ const Navbar = () => {
               <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
-              <Link>Settings</Link>
-            </li>
-            <li>
-              <Link>Logout</Link>
+              <Link onClick={handleLogOut}>Logout</Link>
             </li>
           </ul>
         </div>
