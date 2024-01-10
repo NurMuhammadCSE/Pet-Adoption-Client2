@@ -1,9 +1,18 @@
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useNavigate, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 
 const PetListingDetails = () => {
   const petData = useLoaderData();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const navigate = useNavigate();
 
   const { user } = useContext(AuthContext);
 
@@ -18,22 +27,51 @@ const PetListingDetails = () => {
 
   const { name, image, category, age, location, longDescription } = petData;
 
+  const onSubmit = (data) => {
+    fetch(`http://localhost:5000/adoptAnimal`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          reset();
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Adopt Animal successfully.",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          navigate("/");
+        }
+      });
+  };
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <dialog id="my_modal_5" className="modal  modal-bottom sm:modal-middle">
         <div className="modal-box min-h-screen">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <label className="form-control w-full">
               <div className="label">
                 <span className="label-text">What is your Name?</span>
               </div>
               <input
                 type="text"
+                {...register("name", { required: true })}
                 defaultValue={user?.displayName}
                 placeholder="Type here"
                 className="input input-bordered w-full "
                 readOnly
               />
+              {errors.name && (
+                <span className="text-red-600">Name is required</span>
+              )}
             </label>
             <label className="form-control w-full my-4">
               <div className="label">
@@ -41,11 +79,15 @@ const PetListingDetails = () => {
               </div>
               <input
                 type="email"
+                {...register("email", { required: true })}
                 placeholder="Type here"
                 defaultValue={user?.email}
                 readOnly
                 className="input input-bordered w-full"
               />
+              {errors.email && (
+                <span className="text-red-600">Email is required</span>
+              )}
             </label>
             <label className="form-control w-full">
               <div className="label">
@@ -53,9 +95,13 @@ const PetListingDetails = () => {
               </div>
               <input
                 type="number"
+                {...register("phone", { required: true })}
                 placeholder="Type here"
                 className="input input-bordered w-full"
               />
+              {errors.phone && (
+                <span className="text-red-600">Phone Number is required</span>
+              )}
             </label>
             <label className="form-control w-full my-4">
               <div className="label">
@@ -63,9 +109,13 @@ const PetListingDetails = () => {
               </div>
               <input
                 type="text"
+                {...register("address", { required: true })}
                 placeholder="Type here"
                 className="input input-bordered w-full"
               />
+              {errors.address && (
+                <span className="text-red-600">Address is required</span>
+              )}
             </label>
 
             <div className="form-control mt-6">
