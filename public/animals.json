@@ -1,98 +1,146 @@
 [
   {
-    "name": "Charlie",
-    "age": 3,
-    "location": "New York, NY",
-    "image": "https://placekitten.com/300/200"
-  },
-  {
-    "name": "Bella",
-    "age": 2,
-    "location": "Los Angeles, CA",
-    "image": "https://placedog.net/300/200"
-  },
-  {
-    "name": "Max",
-    "age": 1,
-    "location": "Chicago, IL",
-    "image": "https://placekitten.com/301/200"
-  },
-  {
-    "name": "Lucy",
-    "age": 4,
-    "location": "Houston, TX",
-    "image": "https://placedog.net/301/200"
-  },
-  {
     "name": "Oliver",
     "age": 2,
-    "location": "Phoenix, AZ",
-    "image": "https://placekitten.com/302/200"
+    "location": "New York City, NY",
+    "image": "https://placekitten.com/300/200",
+    "category": "Cats",
+    "shortDescription": "Friendly and playful",
+    "longDescription": "Oliver is a sweet and playful cat looking for a loving home. He enjoys cuddling and playing with toys. Oliver is fully vaccinated and litter-trained."
   },
   {
-    "name": "Chloe",
+    "name": "Charlie",
     "age": 3,
-    "location": "Philadelphia, PA",
-    "image": "https://placedog.net/302/200"
-  },
-  {
-    "name": "Leo",
-    "age": 1,
-    "location": "San Antonio, TX",
-    "image": "https://placekitten.com/303/200"
+    "location": "Los Angeles, CA",
+    "image": "https://placedog.net/300/200",
+    "category": "Dogs",
+    "shortDescription": "Energetic and loyal",
+    "longDescription": "Charlie is a loyal companion who loves outdoor activities. He is trained and gets along well with children and other pets. Charlie is ready for his forever home."
   },
   {
     "name": "Luna",
+    "age": 1,
+    "location": "Chicago, IL",
+    "image": "https://placekitten.com/301/200",
+    "category": "Cats",
+    "shortDescription": "Gentle and affectionate",
+    "longDescription": "Luna is a gentle and affectionate cat who enjoys quiet moments and soft blankets. She is spayed and up-to-date on vaccinations. Luna is looking for a calm and loving home."
+  },
+  {
+    "name": "Max",
     "age": 4,
-    "location": "San Diego, CA",
-    "image": "https://placedog.net/303/200"
+    "location": "Houston, TX",
+    "image": "https://placedog.net/301/200",
+    "category": "Dogs",
+    "shortDescription": "Smart and playful",
+    "longDescription": "Max is a smart and playful dog with a love for learning new tricks. He is house-trained and friendly with both adults and children. Max is hoping to find an active family to join."
   },
   {
-    "name": "Oscar",
+    "name": "Mittens",
     "age": 2,
-    "location": "Dallas, TX",
-    "image": "https://placekitten.com/304/200"
+    "location": "Miami, FL",
+    "image": "https://placekitten.com/302/200",
+    "category": "Cats",
+    "shortDescription": "Adorable and curious",
+    "longDescription": "Mittens is an adorable and curious cat who enjoys exploring new surroundings. She is spayed and microchipped. Mittens is looking for a home with lots of love and attention."
   },
   {
-    "name": "Mia",
+    "name": "Cooper",
+    "age": 2,
+    "location": "Seattle, WA",
+    "image": "https://placedog.net/302/200",
+    "category": "Dogs",
+    "shortDescription": "Loving and playful",
+    "longDescription": "Cooper is a loving and playful dog who enjoys cuddling on the couch and playing fetch in the backyard. He is house-trained, knows basic commands, and is great with kids and other pets."
+  },
+  {
+    "name": "Chloe",
+    "age": 1,
+    "location": "San Francisco, CA",
+    "image": "https://placekitten.com/303/200",
+    "category": "Cats",
+    "shortDescription": "Energetic and charming",
+    "longDescription": "Chloe is an energetic and charming cat with a playful personality. She loves interactive toys and scratching posts. Chloe is spayed, vaccinated, and ready to bring joy to her new family."
+  },
+  {
+    "name": "Bailey",
     "age": 3,
-    "location": "San Jose, CA",
-    "image": "https://placedog.net/304/200"
+    "location": "Denver, CO",
+    "image": "https://placedog.net/303/200",
+    "category": "Dogs",
+    "shortDescription": "Gentle and well-behaved",
+    "longDescription": "Bailey is a gentle and well-behaved dog who enjoys leisurely walks and relaxing by the fireplace. She is trained, crate-trained, and gets along well with both humans and other pets."
   },
   {
     "name": "Milo",
     "age": 1,
     "location": "Austin, TX",
-    "image": "https://placekitten.com/305/200"
+    "image": "https://placekitten.com/304/200",
+    "category": "Cats",
+    "shortDescription": "Affectionate and sociable",
+    "longDescription": "Milo is an affectionate and sociable cat who loves to be the center of attention. He is neutered, microchipped, and enjoys lounging in sunny spots. Milo is looking for a home with plenty of love and playtime."
   },
   {
-    "name": "Sophie",
-    "age": 4,
-    "location": "Jacksonville, FL",
-    "image": "https://placedog.net/305/200"
-  },
-  {
-    "name": "Jackson",
+    "name": "Sadie",
     "age": 2,
-    "location": "Fort Worth, TX",
-    "image": "https://placekitten.com/306/200"
+    "location": "Portland, OR",
+    "image": "https://placedog.net/304/200",
+    "category": "Dogs",
+    "shortDescription": "Playful and friendly",
+    "longDescription": "Sadie is a playful and friendly dog with a wagging tail that never stops. She is great with kids and loves outdoor adventures. Sadie is spayed, vaccinated, and ready to be a loyal companion."
   },
   {
-    "name": "Ava",
+    "name": "Lola",
+    "age": 2,
+    "location": "Atlanta, GA",
+    "image": "https://placekitten.com/305/200",
+    "category": "Cats",
+    "shortDescription": "Playful and cuddly",
+    "longDescription": "Lola is a playful and cuddly cat who enjoys chasing feather toys and curling up on laps. She is spayed, litter-trained, and has a sweet temperament. Lola is looking for a home filled with love and cozy spots."
+  },
+  {
+    "name": "Rocky",
     "age": 3,
-    "location": "Columbus, OH",
-    "image": "https://placedog.net/306/200"
+    "location": "Dallas, TX",
+    "image": "https://placedog.net/305/200",
+    "category": "Dogs",
+    "shortDescription": "Energetic and outgoing",
+    "longDescription": "Rocky is an energetic and outgoing dog who loves outdoor activities and playing fetch. He is house-trained, knows basic commands, and is eager to learn more. Rocky is ready for a family that enjoys both playtime and relaxation."
   },
   {
-    "name": "Cooper",
+    "name": "Mia",
     "age": 1,
-    "location": "Charlotte, NC",
-    "image": "https://placekitten.com/307/200"
+    "location": "Phoenix, AZ",
+    "image": "https://placekitten.com/306/200",
+    "category": "Cats",
+    "shortDescription": "Curious and gentle",
+    "longDescription": "Mia is a curious and gentle cat who enjoys exploring her surroundings and receiving gentle pets. She is spayed, vaccinated, and has a calm demeanor. Mia is looking for a quiet and loving home."
   },
   {
-    "name": "Ruby",
+    "name": "Duke",
     "age": 4,
-    "location": "San Francisco, CA",
-    "image": "https://placedog.net/307/200"
+    "location": "Miami, FL",
+    "image": "https://placedog.net/306/200",
+    "category": "Dogs",
+    "shortDescription": "Loyal and protective",
+    "longDescription": "Duke is a loyal and protective dog who forms strong bonds with his family. He is trained, vaccinated, and excels in obedience. Duke is looking for a forever home where he can be a devoted companion."
+  },
+  {
+    "name": "Cleo",
+    "age": 2,
+    "location": "San Diego, CA",
+    "image": "https://placekitten.com/307/200",
+    "category": "Cats",
+    "shortDescription": "Independent and graceful",
+    "longDescription": "Cleo is an independent and graceful cat who appreciates quiet moments and sunny windows. She is spayed, microchipped, and enjoys both playtime and relaxation. Cleo is seeking a home where she can be the queen of the castle."
+  },
+  {
+    "name": "Baxter",
+    "age": 3,
+    "location": "Denver, CO",
+    "image": "https://placedog.net/307/200",
+    "category": "Dogs",
+    "shortDescription": "Friendly and sociable",
+    "longDescription": "Baxter is a friendly and sociable dog who loves meeting new people and canine friends. He is house-trained, vaccinated, and has a gentle disposition. Baxter is ready to bring joy to a loving family."
   }
 ]

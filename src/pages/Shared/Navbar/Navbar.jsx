@@ -17,7 +17,11 @@ const Navbar = () => {
       <div className="flex-1">
         {/* Replace the link and logo with your actual logo and home page link */}
         <Link to="/" className="btn btn-ghost text-xl">
-          <img src="logo.jpg" alt="Your Logo" className="h-8 w-8 mr-2" />
+          <img
+            src="https://img.freepik.com/free-vector/cute-dog-cat-friend_1308-133286.jpg?w=740&t=st=1704905037~exp=1704905637~hmac=526b4faecb3e8667754f314c4cda874035e2543e178005716ddd6fb8de954ea0"
+            alt="Your Logo"
+            className="h-8 w-8 mr-2"
+          />
           Cat Adoption
         </Link>
       </div>

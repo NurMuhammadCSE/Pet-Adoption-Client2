@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../pages/Home/Home/Home";
 import PetListing from "../pages/PetListing/PetListing";
-import PetDetails from "../pages/PetDetails/PetDetails";
 import SignUp from "../pages/SignUp/SignUp";
 import Login from "../pages/Login/Login";
+import PetListingDetails from "../pages/PetListing/PetListingDetails";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +21,8 @@ export const router = createBrowserRouter([
       },
       {
         path: `details/:id`,
-        element: <PetDetails></PetDetails>,
+        element: <PetListingDetails></PetListingDetails>,
+        loader : (({params}) => fetch(`http://localhost:5000/details/${params.id}`))
       },
       {
         path:'/signup',
