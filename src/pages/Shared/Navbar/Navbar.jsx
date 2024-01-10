@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex-none">
         <div className="space-x-4">
           {/* Add relevant links to navigate to different sections */}
-          <Link to="/home" className="btn btn-ghost">
+          <Link to="/" className="btn btn-ghost">
             Home
           </Link>
           <Link to="/pet-listing" className="btn btn-ghost">
@@ -26,8 +26,8 @@ const Navbar = () => {
           <Link to="/donation-campaigns" className="btn btn-ghost">
             Donation Campaigns
           </Link>
-          <Link to="/login-register" className="btn btn-ghost">
-            Login/Register
+          <Link to="/login" className="btn btn-ghost">
+            Login
           </Link>
         </div>
         <div className="dropdown dropdown-end">
