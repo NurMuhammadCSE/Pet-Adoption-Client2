@@ -6,6 +6,7 @@ import SignUp from "../pages/SignUp/SignUp";
 import Login from "../pages/Login/Login";
 import PetListingDetails from "../pages/PetListing/PetListingDetails";
 import DonationCampaigns from "../pages/DonationCampaigns/DonationCampaigns";
+import DonationCampaignDetails from "../pages/DonationCampaigns/DonationCampaignDetails";
 
 export const router = createBrowserRouter([
   {
@@ -23,20 +24,27 @@ export const router = createBrowserRouter([
       {
         path: `details/:id`,
         element: <PetListingDetails></PetListingDetails>,
-        loader : (({params}) => fetch(`http://localhost:5000/details/${params.id}`))
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/details/${params.id}`),
       },
       {
-        path:'donationCampaigns',
-        element: <DonationCampaigns></DonationCampaigns>
+        path: "donationCampaigns",
+        element: <DonationCampaigns></DonationCampaigns>,
       },
       {
-        path:'/signup',
-        element: <SignUp></SignUp>
+        path: "donationDetails/:id",
+        element: <DonationCampaignDetails></DonationCampaignDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/donationCampaignsDetails/${params.id}`),
       },
       {
-        path:'login',
-        element: <Login></Login>
-      }
+        path: "/signup",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
     ],
   },
 ]);
