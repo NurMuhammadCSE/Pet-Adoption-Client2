@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Charlie",
+    "age": 3,
+    "location": "New York, NY",
+    "image": "https://placekitten.com/300/200"
+  },
+  {
+    "name": "Bella",
+    "age": 2,
+    "location": "Los Angeles, CA",
+    "image": "https://placedog.net/300/200"
+  },
+  {
+    "name": "Max",
+    "age": 1,
+    "location": "Chicago, IL",
+    "image": "https://placekitten.com/301/200"
+  },
+  {
+    "name": "Lucy",
+    "age": 4,
+    "location": "Houston, TX",
+    "image": "https://placedog.net/301/200"
+  },
+  {
+    "name": "Oliver",
+    "age": 2,
+    "location": "Phoenix, AZ",
+    "image": "https://placekitten.com/302/200"
+  },
+  {
+    "name": "Chloe",
+    "age": 3,
+    "location": "Philadelphia, PA",
+    "image": "https://placedog.net/302/200"
+  },
+  {
+    "name": "Leo",
+    "age": 1,
+    "location": "San Antonio, TX",
+    "image": "https://placekitten.com/303/200"
+  },
+  {
+    "name": "Luna",
+    "age": 4,
+    "location": "San Diego, CA",
+    "image": "https://placedog.net/303/200"
+  },
+  {
+    "name": "Oscar",
+    "age": 2,
+    "location": "Dallas, TX",
+    "image": "https://placekitten.com/304/200"
+  },
+  {
+    "name": "Mia",
+    "age": 3,
+    "location": "San Jose, CA",
+    "image": "https://placedog.net/304/200"
+  },
+  {
+    "name": "Milo",
+    "age": 1,
+    "location": "Austin, TX",
+    "image": "https://placekitten.com/305/200"
+  },
+  {
+    "name": "Sophie",
+    "age": 4,
+    "location": "Jacksonville, FL",
+    "image": "https://placedog.net/305/200"
+  },
+  {
+    "name": "Jackson",
+    "age": 2,
+    "location": "Fort Worth, TX",
+    "image": "https://placekitten.com/306/200"
+  },
+  {
+    "name": "Ava",
+    "age": 3,
+    "location": "Columbus, OH",
+    "image": "https://placedog.net/306/200"
+  },
+  {
+    "name": "Cooper",
+    "age": 1,
+    "location": "Charlotte, NC",
+    "image": "https://placekitten.com/307/200"
+  },
+  {
+    "name": "Ruby",
+    "age": 4,
+    "location": "San Francisco, CA",
+    "image": "https://placedog.net/307/200"
+  }
+]
