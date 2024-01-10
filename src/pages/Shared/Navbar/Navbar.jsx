@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link to="/pet-listing" className="btn btn-ghost">
             Pet Listing
           </Link>
-          <Link to="/donation-campaigns" className="btn btn-ghost">
+          <Link to="/donationCampaigns" className="btn btn-ghost">
             Donation Campaigns
           </Link>
           {user?.email ? (

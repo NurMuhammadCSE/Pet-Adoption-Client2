@@ -10,9 +10,9 @@ const PetListingCard = ({ pet }) => {
         <img src={image} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <p>{age}</p>
-        <p>{location}</p>
+        <h2 className="card-title">Name: {name}</h2>
+        <p>Age: {age}</p>
+        <p>Location: {location}</p>
         <div className="card-actions">
           <button className="btn btn-primary">
             <Link to={`/details/${_id}`}>Details</Link>

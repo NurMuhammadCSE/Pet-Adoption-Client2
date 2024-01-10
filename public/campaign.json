@@ -1,0 +1,51 @@
+[
+    {
+      "petName": "Daisy",
+      "petPicture": "https://placekitten.com/300/200",
+      "maxDonationAmount": 500,
+      "lastDateOfDonation": "2024-03-01",
+      "shortDescription": "Help Daisy get a new home!",
+      "longDescription": "Daisy is a friendly cat looking for a loving family. Your donations will go towards her medical expenses and care."
+    },
+    {
+      "petName": "Max",
+      "petPicture": "https://placedog.net/500/300",
+      "maxDonationAmount": 1000,
+      "lastDateOfDonation": "2024-03-10",
+      "shortDescription": "Support Max's journey to recovery!",
+      "longDescription": "Max, a rescue dog, needs surgery for a leg injury. Your contributions will help him receive the necessary treatment and rehabilitation."
+    },
+    {
+      "petName": "Whiskers",
+      "petPicture": "https://placedog.net/306/200",
+      "maxDonationAmount": 300,
+      "lastDateOfDonation": "2024-03-15",
+      "shortDescription": "Help Whiskers find a forever home!",
+      "longDescription": "Whiskers, an adorable rabbit, is looking for a family to call his own. Your donations will cover his adoption fees and provide necessary supplies."
+    },
+    {
+      "petName": "Nemo",
+      "petPicture": "https://placedog.net/306/200",
+      "maxDonationAmount": 800,
+      "lastDateOfDonation": "2024-03-20",
+      "shortDescription": "Support Nemo's aquatic adventures!",
+      "longDescription": "Nemo, a colorful fish, needs a new aquarium. Your contributions will help create a vibrant and comfortable environment for Nemo."
+    },
+    {
+      "petName": "Snowball",
+      "petPicture": "https://placedog.net/306/200",
+      "maxDonationAmount": 200,
+      "lastDateOfDonation": "2024-03-25",
+      "shortDescription": "Help Snowball enjoy snowy days!",
+      "longDescription": "Snowball, a pet bunny, dreams of playing in the snow. Your donations will provide Snowball with a cozy hutch and winter essentials."
+    },
+    {
+      "petName": "Rocky",
+      "petPicture": "https://placekitten.com/350/250",
+      "maxDonationAmount": 1500,
+      "lastDateOfDonation": "2024-03-30",
+      "shortDescription": "Support Rocky's climb to happiness!",
+      "longDescription": "Rocky, a playful kitten, needs a climbing tree for exercise and entertainment. Your contributions will make Rocky's indoor adventures more exciting."
+    }
+  ]
+  
