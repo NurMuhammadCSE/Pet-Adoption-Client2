@@ -1,9 +1,8 @@
 import { useForm } from "react-hook-form";
-import { useNavigate, useLoaderData } from "react-router-dom";
+import { useNavigate, useLoaderData, Link } from "react-router-dom";
 
 const DonationCampaignDetails = () => {
   const DonationCampaignDetails = useLoaderData();
-  console.log(DonationCampaignDetails);
 
   const {
     petName,
@@ -16,34 +15,24 @@ const DonationCampaignDetails = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
-    fetch(`http://localhost:5000/adoptAnimal`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
-          reset();
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "Adopt Animal successfully.",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-          navigate("/");
-        }
-      });
+    const donationAmount = parseFloat(data.donate);
+
+    if (isNaN(donationAmount) || donationAmount <= 0) {
+      // Handle invalid donation amount (not a number or negative)
+      console.error("Invalid donation amount");
+      return;
+    }
+
+
+    // reset();
+    document.getElementById("my_modal_5").close();
+
+    navigate("/payment", { state: { donationAmount } });
   };
 
   return (
@@ -53,31 +42,25 @@ const DonationCampaignDetails = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <label className="form-control w-full">
               <div className="label">
-                <span className="label-text">What is your Name?</span>
+                <span className="label-text">Enter your Donate</span>
               </div>
               <input
-                type="text"
-                {...register("name", { required: true })}
+                type="number"
+                {...register("donate", { required: true })}
                 placeholder="Type here"
                 className="input input-bordered w-full "
-                readOnly
               />
-              {errors.name && (
-                <span className="text-red-600">Name is required</span>
+              {errors.donate && (
+                <span className="text-red-600">Donation is required</span>
               )}
             </label>
 
             <div className="form-control mt-6">
-              <input className="btn btn-primary" type="submit" value="Submit" />
+              <button className="btn btn-primary" type="submit">
+                <Link to={"/payment"}>Payment</Link>
+              </button>
             </div>
           </form>
-
-          <div className="modal-action">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </form>
-          </div>
         </div>
       </dialog>
 

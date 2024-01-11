@@ -55,7 +55,7 @@ const AuthProvider = ({ children }) => {
         const loggedUser = {
           email: currentUser.email,
         };
-        fetch("https://robot-toys-server.vercel.app/jwt", {
+        fetch("http://localhost:5000/jwt", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -66,10 +66,10 @@ const AuthProvider = ({ children }) => {
           .then((data) => {
             console.log("jwt response", data);
             // Warning: Local storage is not the best (second best place) to store access token
-            localStorage.setItem("robot-access-token", data.token);
+            localStorage.setItem("pet-access-token", data.token);
           });
       } else {
-        localStorage.removeItem("robot-access-token");
+        localStorage.removeItem("pet-access-token");
       }
       setLoading(false);
     });
